@@ -1,0 +1,37 @@
+# --- Binários e Objetos ---
+bin/
+obj/
+
+*.o
+*.out
+*.exe
+*.app
+
+# --- Bibliotecas ---
+*.a
+*.la
+*.lo
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# --- Debug e Logs ---
+*.dSYM/
+*.log
+vgcore.*
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs e Editores ---
+.vscode/
+.idea/
+*.cbp
+*.layout
+.clangd/
+compile_commands.json
+
+# --- Testes ---
+test_runner
