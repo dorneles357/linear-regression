@@ -30,3 +30,7 @@ float calculate_covariance(float *vecX, float *vecY, int size) {
     }
     return covar / size;
 }
+
+float calculate_standard_deviation(float *vector, int size) {
+    return (calculate_variance(vector, size))*0.5;
+}

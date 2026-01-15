@@ -31,10 +31,21 @@ void test_covariance() {
     }
 }
 
+void test_startandard_deviation() {
+    float data[] = {2.0, 4.0, 4.0, 4.0, 5.0, 5.0, 7.0, 9.0};
+    float sd = calculate_standard_deviation(data, 8);
+    if (quase_igual(sd, 2.0)) {
+        printf("[PASS] Teste de Desvio Padrão\n");
+    } else {
+        printf("[FAIL] Teste de Desvio Padrão: esperado 2.0, obtido %.2f\n", sd);
+    }
+}
+
 int main() {
     printf("--- INICIANDO TESTES UNITÁRIOS ---\n");
     test_mean();
     test_covariance();
+    test_startandard_deviation();
     printf("--- TODOS OS TESTES CONCLUÍDOS ---\n");
     return 0;
 }
