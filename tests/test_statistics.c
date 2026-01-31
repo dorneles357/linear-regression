@@ -42,10 +42,8 @@ void test_startandard_deviation() {
 }
 
 int main() {
-    printf("--- INICIANDO TESTES UNITÁRIOS ---\n");
     test_mean();
     test_covariance();
     test_startandard_deviation();
-    printf("--- TODOS OS TESTES CONCLUÍDOS ---\n");
     return 0;
 }

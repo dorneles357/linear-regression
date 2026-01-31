@@ -46,10 +46,8 @@ void test_standard_error() {
 }
 
 int main() {
-    printf("--- INICIANDO TESTES UNITÁRIOS ---\n");
     test_model_fit();
     test_r2_score();
     test_standard_error();
-    printf("--- TODOS OS TESTES CONCLUÍDOS ---\n");
     return 0;
 }
