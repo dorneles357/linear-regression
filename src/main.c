@@ -8,10 +8,15 @@ int main() {
 
     LinearModel my_model = fit_model(x, y, n);
 
-    printf("### Modelo de Regressão ###\n");
+    printf("--------------Modelo de Regressão-----------------\n");
+    printf("Equação: y = %.2fx + %.2f\n", my_model.slope, my_model.intercept);
+    printf("--------------------------------------------------\n");
     printf("Slope (b1):     %.2f\n", my_model.slope);
     printf("Intercept (b0): %.2f\n", my_model.intercept);
-    printf("Equação: y = %.2fx + %.2f\n", my_model.slope, my_model.intercept);
-
+    printf("--------------------------------------------------\n");
+    printf("R² Score:       %.2f\n", r2_score(x, y, my_model, n));
+    printf("Standard Error: %.2f\n", standard_error(x, y, my_model, n));
+    printf("--------------------------------------------------\n");
+    
     return 0;
 }
