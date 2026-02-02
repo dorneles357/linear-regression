@@ -1,5 +1,5 @@
 # Nome do executável final
-TARGET = meu_programa
+TARGET = linear-regression
 
 # Compilador e flags
 CC = gcc
