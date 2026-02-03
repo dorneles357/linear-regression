@@ -37,5 +37,5 @@ float standard_error(float *vecX, float *vecY, LinearModel model, int size) {
 
     float variance = ssResidual / (size - 2);
 
-    return (variance);
+    return sqrt(variance);
 }

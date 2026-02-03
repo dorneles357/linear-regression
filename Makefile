@@ -4,7 +4,7 @@ TARGET = linear-regression
 # Compilador e flags
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude -g
-LDFLAGS = 
+LDFLAGS = -lm
 
 # Pastas
 SRC_DIR = src
